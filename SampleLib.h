@@ -17,8 +17,8 @@ void parity(int n);
 void compare(int a, int b);
 // Definition d'une procédure qui range dans l'ordre croissant trois nombres entrés
 void ShortToLongRange(int tab[2]);
-// Definition d'une procédure qui permute deux valeurs entrées 
-void swap(int * a, int * b);
+// Definition d'une procédure qui permute deux carctères entrées 
+void swap(char * a, char * b);
 //Definition d'une fonction qui renvoie la somme de deux valeurs
 int Somme(int a, int b);
 #endif

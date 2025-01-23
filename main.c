@@ -9,6 +9,7 @@
 int main( void ) {
  int t=1,x,y,i,n,result,Tab[MAX], choix;
  char tab[MAX];
+ char p='A',q='B';
  float a,b;
  
  system("color 70"); //Changer le fontColor et Background color
@@ -21,14 +22,14 @@ int main( void ) {
  
  printf(" => 1 : pour effectuer calcule de la puissance de la forme a^b \n");
  printf(" => 2 : pour effectuer calcule de la factoriel d\'un entier n \n");
- printf(" => 3 : pour afficher bonjour \n");
- printf(" => 4 : pour inverser une chaine de caractes \n");
- printf(" => 5 : pour calculer et afficher le produit de deux reels (precision de 03 chiffres apres la vigurle) \n");
- printf(" => 6 : pour preciser la parite d'un nombre \n");
- printf(" => 7 : pour preciser le max ou l\'egalite de deux nombres \n");
- printf(" => 8 : pour ranger dans l\'ordre croissant \n");
- printf(" => 9 : pour effetuer la permutation de deux nombres \n");
- printf(" => 10 : pour effectuer la somme de deux valeurs \n");
+ printf(" => 3 (exercice 1): pour afficher bonjour \n");
+ printf(" => 4 (exercice 2) : pour inverser une chaine de caractes \n");
+ printf(" => 5 (exercice 3) : pour calculer et afficher le produit de deux reels (precision de 03 chiffres apres la vigurle) \n");
+ printf(" => 6 (exercice 4) : pour preciser la parite d'un nombre \n");
+ printf(" => 7 (exercice 5) : pour preciser le max ou l\'egalite de deux nombres \n");
+ printf(" => 8 (exercice 6) : pour ranger dans l\'ordre croissant \n");
+ printf(" => 9 (exercice 16) : pour effetuer la permutation de deux caractere \n");
+ printf(" => 10 (exercice 17) : pour effectuer la somme de deux valeurs \n");
  printf("Choix : ");scanf("%d",&choix);
  switch(choix){
  	
@@ -115,14 +116,12 @@ printf("Operation en cours...\n");
  break;
  
  case 9:
- printf("------------------------ EXCERCICE 16 : Permutation de deux nombres -------------------\n");
- printf("Entrer les valeurs inverser : \n");
- printf(" Valeur 1 => "); scanf("%d", &x);
- printf(" Valeur 2 => "); scanf("%d", &y);
+ printf("------------------------ EXCERCICE 16 : Permutation de deux caracteres -------------------\n");
+ printf( " Avant la permutation : Caractere 1 = %c, Caractere 2 = %c \n",p,q);
  printf("Permutation en cours...\n");
- progressing(2000,50);
+ progressing(1000,50);
  printf("\n");
- swap(&x,&y);
+ swap(&p,&q);
  break;
  
  case 10:
@@ -135,11 +134,11 @@ printf("Operation en cours...\n");
  default:
  	printf(" WARNING ! Saisi incorrect reessayer.\n\n");
  }
- printf("Voulez vous continuer ? OUI=1 | NO=0 :");
+ printf("Voulez vous continuer ? OUI=1 | NO=Autre :");
  scanf("%d",&t);
 }
  
 
- system("\n\n pause");
+ printf("\n\n");
  return EXIT_SUCCESS;
 }

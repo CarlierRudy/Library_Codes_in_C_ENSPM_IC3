@@ -72,20 +72,19 @@ void ShortToLongRange(int tab[2]){
 			}
 		}
 	}
-	printf("Les nombres ranges dans l\'ordre croissant sera : ");
+	printf("Les nombres ranges dans l\'ordre croissant seront : ");
 	for(i=0;i<=2;i++){
  	 printf(" %d ",tab[i]);
  	}
  	printf("\n");
 }
 //exercice16
-void swap(int * a, int * b){
-	int temp;
-	printf( "Valeur 1 ==%d, Valeur 2 ==%d\n", *a, *b ); 
+void swap(char * a, char * b){
+	char temp;
     temp = *a;
     *a = *b;
     *b = temp;
-    printf( "Valeur 1 ==%d, Valeur 2 ==%d\n", *a, *b );
+    printf( " Apres la permutation : Caractere 1 = %c, Caractere 2 = %c \n", *a, *b );
 }
 //exercice17
 int Somme(int a, int b){
